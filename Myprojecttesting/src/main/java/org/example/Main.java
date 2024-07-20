@@ -88,8 +88,10 @@ class MyMain {
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            // Close the driver
+            driver.quit();
         }
-        // Finally block is removed to keep the browser open
     }
 
     static void applyFilters(WebDriver driver) {
